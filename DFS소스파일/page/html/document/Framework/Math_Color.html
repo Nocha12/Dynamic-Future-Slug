@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>RGEngine</title>
+        
+        <link rel="stylesheet" type="text/css" href="../../../css/common.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/document.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            
+            <ul id="navbar">
+                <li><a href="../../../index.html">Main</a></li>
+                <li><a href="../../../history.html">History</a></li>
+                <li><a href="../../../news.html">News</a></li>
+                <li><a href="../../../document.html">Document</a></li>
+                <li><a href="../../../download.html">Download</a></li>
+            </ul>
+            
+            <div id="sidebar_bg"></div>
+            <nav id="sidebar">
+                <ul>
+                    <li><a href="../Framework.html">Framework</a></li>
+                    <li><a href="Application.html">Application</a></li>
+                    <li><a href="Component.html">Component</a></li>
+                    <li><a href="GameObject.html">GameObject</a></li>
+                    <li><a href="Graphic.html">Graphic</a></li>
+                    <li><a href="Input.html">Input</a></li>
+                    <li><a href="Scene.html">Scene</a></li>
+                    <li><a href="Time.html">Time</a></li>
+                    <li><a href="DataStream.html">DataStream</a></li>
+                    <li><a href="Math.html">Math</a></li>
+                    <li><a href="Math_Vector.html">Math::Vector</a></li>
+                    <li><a href="Math_Dimension.html">Math::Dimension</a></li>
+                    <li><a href="Math_Circle.html">Math::Circle</a></li>
+                    <li><a href="Math_Matrix.html">Math::Matrix</a></li>
+                    <li><a href="Math_Color.html">Math::Color</a></li>
+                    <li><a href="Math_Rect.html">Math::Rect</a></li>
+                    <li><a href="Types.html">Types</a></li>
+                    <li><a href="Types_Point.html">Types::Point</a></li>
+                    <li><a href="Types_Size.html">Types::Size</a></li>
+                    <li><a href="Types_Rect.html">Types::Rect</a></li>
+                    <li><a href="AssetManager.html">AssetManager</a></li>
+                    <li><a href="Assets.html">Assets</a></li>
+                    <li><a href="Assets_Sound.html">Assets::Sound</a></li>
+                    <li><a href="Assets_SoundManager.html">Assets::SoundManager</a></li>
+                    <li><a href="Assets_Texture.html">Assets::Texture</a></li>
+                    <li><a href="Assets_TextureManager.html">Assets::TextureManager</a></li>
+                </ul>
+                <ul>
+                    <li><a href="../Engine.html">Engine</a></li>
+                    <li><a href="../Engine/Components.html">Components</a></li>
+                    <li><a href="../Engine/Components_AudioListener.html">Components::AudioListener</a></li>
+                    <li><a href="../Engine/Components_AudioSource.html">Components::AudioSource</a></li>
+                    <li><a href="../Engine/Components_Collider.html">Components::Collider</a></li>
+                    <li><a href="../Engine/Components_BoxCollider.html">Components::BoxCollider</a></li>
+                    <li><a href="../Engine/Components_CircleCollider.html">Components::CircleCollider</a></li>
+                    <li><a href="../Engine/Components_Renderer.html">Components::Renderer</a></li>
+                    <li><a href="../Engine/Components_AnimationRenderer.html">Components::AnimationRenderer</a></li>
+                    <li><a href="../Engine/Components_SpriteRenderer.html">Components::SpriteRenderer</a></li>
+                    <li><a href="../Engine/Components_TextRenderer.html">Components::TextRenderer</a></li>
+                    <li><a href="../Engine/DataStreams.html">DataStreams</a></li>
+                    <li><a href="../Engine/DataStreams_File.html">DataStreams::File</a></li>
+                    <li><a href="../Engine/DataStreams_XML.html">DataStreams::XML</a></li>
+                    <li><a href="../Engine/DataStreams_JSON.html">DataStreams::JSON</a></li>
+                </ul>
+            </nav>
+            
+            <header id="header">
+                
+            </header>
+            
+            <div id="main">
+                <ul>
+                    <h2>struct RGEngine::Math::Color</h2>
+                    <p>ARGB Color<br>typedef unsigned long RGEngine::ARGB<br>ARGB는 alpha, red, blue, green로, 0~255의 정수값을 왼쪽부터 각각 8비트씩 가지고 있는 32비트 정수이다.</p>
+                    <hr>
+                    
+                    <li>float r, g, b, a
+                        <p>red, green, blue, alpha / 빨강, 초록, 파랑, 투명도</p>
+                        <p>0.0f ~ 1.0f의 값을 갖는다.</p>
+                    </li>
+                    <li>
+                        Color(void)<br>
+                        Color(float r, float g, float b)<br>
+                        Color(float r, float g, float b, float a)<br>
+                        Color(int r, int g, int b)<br>
+                        Color(int r, int g, int b, int a)<br>
+                        Color(ARGB ulcolor)<br><br>
+                        void SetColor(const Color &amp;c)<br>
+                        void SetColor(float r, float g, float b)<br>
+                        void SetColor(float r, float g, float b, float a)<br>
+                        void SetColor(int r, int g, int b)<br>
+                        void SetColor(int r, int g, int b, int a)<br>
+                        void SetColor(ARGB ulcolor)<br><br>
+                        Color&amp; operator =(ARGB ulcolor)
+                        <p>생성자, 복사, 할당</p>
+                    </li>
+                    <li>operator ARGB(void) const
+                        <p>
+                            ARGB로 형변환한다.
+                        </p>
+                    </li>
+                    <li>
+                        Color operator +(const Color &amp;c) const<br>
+                        Color operator -(const Color &amp;c) const<br>
+                        Color operator /(const Color &amp;c) const<br>
+                        Color operator *(const Color &amp;c) const<br>
+                        Color operator +(float f) const<br>
+                        Color operator -(float f) const<br>
+                        Color operator /(float f) const<br>
+                        Color operator *(float f) const<br>
+                        Color&amp; operator +=(const Color &amp;c)<br>
+                        Color&amp; operator -=(const Color &amp;c)<br>
+                        Color&amp; operator /=(const Color &amp;c)<br>
+                        Color&amp; operator *=(const Color &amp;c)<br>
+                        Color&amp; operator +=(float f)<br>
+                        Color&amp; operator -=(float f)<br>
+                        Color&amp; operator /=(float f)<br>
+                        Color&amp; operator *=(float f)<br>
+                        bool operator ==(const Color &amp;c) const<br>
+                        bool operator ==(ARGB ulcolor) const<br>
+                        bool operator !=(const Color &amp;c) const<br>
+                        bool operator !=(ARGB ulcolor) const<br>
+                        <p>연산자</p>
+                    </li>
+                </ul>
+            </div>
+        
+            <footer id="footer">
+                <p>Copyright ⓒ 2016 Republic of Game. All Rights Reserved.</p>
+            </footer>
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,128 @@
+html, body
+{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Arial", sans-serif;
+}
+
+ul#navbar
+{
+    overflow: auto;
+    padding-left: 0px;
+    list-style-type: none;
+    margin-top: 0;
+    width: 100%;
+    background-color: #000;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: inline-block;
+    height: 90px;
+    z-index: 2;
+}
+ul#navbar li
+{
+    margin-top: 15px;
+    display: inline-block;
+    line-height: 60px;
+    height: 60px;
+    width: 120px;
+    border-right: 1px solid #fff;
+}
+ul#navbar li a
+{
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+}
+ul#navbar li:hover
+{
+    background: #333;
+}
+
+div#sidebar_bg
+{
+    display: block;
+    position: absolute;
+    width: 270px;
+    height: 100%;
+    background: #ddd;
+    z-index: 1;
+}
+nav#sidebar
+{
+    display: block;
+    position: absolute;
+    float: left;
+    background: #ddd;
+    top: 90px;
+    width: 270px;
+    z-index: 1;
+}
+nav#sidebar, nav#sidebar ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav > ul > li
+{
+    height: 40px;
+    line-height: 40px;
+    text-indent: 30px;
+}
+nav > ul > li:first-child 
+{
+    height: 40px;
+    line-height: 40px;
+    text-indent: 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+nav > ul > li > a
+{
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+nav > ul > li:hover
+{
+    background: #111;
+}
+nav > ul > li > a:hover
+{
+    color: #fff;
+}
+
+#wrapper
+{
+    position: relative;
+    min-height: 100%;
+    width: 100%;
+}
+#main
+{
+    display: block;
+    box-sizing: border-box;
+    padding-top: 100px;
+    padding-left: 290px;
+    padding-bottom: 50px;
+    width: 100%;
+}
+#footer
+{
+    background-color: rgb(30, 30, 30);
+    box-sizing: border-box;
+    color: #fff;
+    text-indent: 288px;
+    
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+}

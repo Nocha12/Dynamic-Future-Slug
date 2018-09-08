@@ -1,0 +1,29 @@
+#main
+{  
+    font-size: 20px;
+}
+#main > h1.title
+{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#main > ul
+{
+    list-style: none;
+}
+#main > ul > li
+{
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+#main > ul > li > p
+{
+    font-weight: normal;
+    font-size: 18px;
+    text-indent: 60px;
+}
+#main > ul > li > p:before
+{
+    content: '* ';
+}

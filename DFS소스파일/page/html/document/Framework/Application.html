@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>RGEngine</title>
+        
+        <link rel="stylesheet" type="text/css" href="../../../css/common.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/document.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            
+            <ul id="navbar">
+                <li><a href="../../../index.html">Main</a></li>
+                <li><a href="../../../history.html">History</a></li>
+                <li><a href="../../../news.html">News</a></li>
+                <li><a href="../../../document.html">Document</a></li>
+                <li><a href="../../../download.html">Download</a></li>
+            </ul>
+            
+            <div id="sidebar_bg"></div>
+            <nav id="sidebar">
+                <ul>
+                    <li><a href="../Framework.html">Framework</a></li>
+                    <li><a href="Application.html">Application</a></li>
+                    <li><a href="Component.html">Component</a></li>
+                    <li><a href="GameObject.html">GameObject</a></li>
+                    <li><a href="Graphic.html">Graphic</a></li>
+                    <li><a href="Input.html">Input</a></li>
+                    <li><a href="Scene.html">Scene</a></li>
+                    <li><a href="Time.html">Time</a></li>
+                    <li><a href="DataStream.html">DataStream</a></li>
+                    <li><a href="Math.html">Math</a></li>
+                    <li><a href="Math_Vector.html">Math::Vector</a></li>
+                    <li><a href="Math_Dimension.html">Math::Dimension</a></li>
+                    <li><a href="Math_Circle.html">Math::Circle</a></li>
+                    <li><a href="Math_Matrix.html">Math::Matrix</a></li>
+                    <li><a href="Math_Color.html">Math::Color</a></li>
+                    <li><a href="Math_Rect.html">Math::Rect</a></li>
+                    <li><a href="Types.html">Types</a></li>
+                    <li><a href="Types_Point.html">Types::Point</a></li>
+                    <li><a href="Types_Size.html">Types::Size</a></li>
+                    <li><a href="Types_Rect.html">Types::Rect</a></li>
+                    <li><a href="AssetManager.html">AssetManager</a></li>
+                    <li><a href="Assets.html">Assets</a></li>
+                    <li><a href="Assets_Sound.html">Assets::Sound</a></li>
+                    <li><a href="Assets_SoundManager.html">Assets::SoundManager</a></li>
+                    <li><a href="Assets_Texture.html">Assets::Texture</a></li>
+                    <li><a href="Assets_TextureManager.html">Assets::TextureManager</a></li>
+                </ul>
+                <ul>
+                    <li><a href="../Engine.html">Engine</a></li>
+                    <li><a href="../Engine/Components.html">Components</a></li>
+                    <li><a href="../Engine/Components_AudioListener.html">Components::AudioListener</a></li>
+                    <li><a href="../Engine/Components_AudioSource.html">Components::AudioSource</a></li>
+                    <li><a href="../Engine/Components_Collider.html">Components::Collider</a></li>
+                    <li><a href="../Engine/Components_BoxCollider.html">Components::BoxCollider</a></li>
+                    <li><a href="../Engine/Components_CircleCollider.html">Components::CircleCollider</a></li>
+                    <li><a href="../Engine/Components_Renderer.html">Components::Renderer</a></li>
+                    <li><a href="../Engine/Components_AnimationRenderer.html">Components::AnimationRenderer</a></li>
+                    <li><a href="../Engine/Components_SpriteRenderer.html">Components::SpriteRenderer</a></li>
+                    <li><a href="../Engine/Components_TextRenderer.html">Components::TextRenderer</a></li>
+                    <li><a href="../Engine/DataStreams.html">DataStreams</a></li>
+                    <li><a href="../Engine/DataStreams_File.html">DataStreams::File</a></li>
+                    <li><a href="../Engine/DataStreams_XML.html">DataStreams::XML</a></li>
+                    <li><a href="../Engine/DataStreams_JSON.html">DataStreams::JSON</a></li>
+                </ul>
+            </nav>
+            
+            <header id="header">
+                
+            </header>
+            
+            <div id="main">
+                <ul>
+                    <h2>class RGEngine::Application</h2>
+                    <p>Singleton, GUI Bundle</p>
+                    <hr>
+                    
+                    <li>static Application* GetInstance(void)
+                        <p>싱글톤 클래스의 객체를 얻어온다.</p>
+                        <p>#define RGApp (RGEngine::Application::GetInstance)</p>
+                    </li>
+                        
+                    <li>bool Initialize(const wchar_t *title, int width, int height, bool fullscreen)
+                        <p>Graphic, Input, Time 객체를 초기화하고 윈도우 화면을 띄운다.</p>
+                        <p>wchar_t는 유니코드 문자열이므로 L"타이틀" 과 같이 작성한다.(유니코드 표기)</p>
+                    </li>
+                    <li>void Release(void)
+                        <p>Graphic, Input, Time, 현재 Scene 객체를 해제한다.</p>
+                    </li>
+                        
+                    <li>Graphic* GetGraphic(void) const
+                        <p>Graphic 객체를 얻어온다.</p>
+                        <p>#define RGGraphic (RGApp->GetGraphic())</p>
+                    </li>
+                    <li>Input* GetInput(void) const
+                        <p>Input 객체를 얻어온다.</p>
+                        <p>#define RGInput (RGApp->GetInput())</p>
+                    </li>
+                    <li>Time* GetTime(void) const
+                        <p>Time 객체를 얻어온다.</p>
+                        <p>#define RGTime (RGApp->GetTime())</p>
+                    </li>
+                        
+                    <li>void ChangeScene(Scene *scene)
+                        <p>현재 Scene을 바꾼다. 기존의 Scene은 삭제된다.</p>
+                    </li>
+                    <li>Scene* GetScene(void) const
+                        <p>현재 Scene을 얻어온다.</p>
+                    </li>
+                    
+                    <li>template&lt;typename SceneType&gt; SceneType* GetScene(void) const
+                        <p>현재 Scene을 SceneType으로 형변환 하여 얻어온다.</p>
+                    </li>
+                        
+                    <li>void Update(void)
+                        <p>현재 Scene의 프레임을 갱신한다.</p>
+                    </li>
+                    <li>void Render(void)
+                        <p>현재 Scene을 렌더링한다.</p>
+                    </li>
+                    <li>void Exit(void)
+                        <p>프로그램을 종료한다.</p>
+                    </li>
+                    
+                    <li>inline double deltaTime(void)
+                        <p>멤버 메서드가 아니다.</p>
+                        <p>RGTime->GetElapsedTime()을 deltaTime()으로 쉽게 접근하게 한다.</p>
+                    </li>
+                </ul>
+                
+            </div>
+        
+            <footer id="footer">
+                <p>Copyright ⓒ 2016 Republic of Game. All Rights Reserved.</p>
+            </footer>
+        </div>
+        
+    </body>
+</html>

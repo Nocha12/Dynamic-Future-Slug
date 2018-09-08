@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>RGEngine</title>
+        
+        <link rel="stylesheet" type="text/css" href="../../css/common.css">
+        <link rel="stylesheet" type="text/css" href="../../css/history.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            
+            <ul id="navbar">
+                <li><a href="../../index.html">Main</a></li>
+                <li><a href="../../history.html">History</a></li>
+                <li><a href="../../news.html">News</a></li>
+                <li><a href="../../document.html">Document</a></li>
+                <li><a href="../../download.html">Download</a></li>
+            </ul>
+            
+            <div id="sidebar_bg"></div>
+            <nav id="sidebar">
+                <ul>
+                    <li><a href="1.0.0.html">1.0.0</a></li>
+                    <li><a href="1.0.1.html">1.0.1</a></li>
+                    <li><a href="1.1.0.html">1.1.0</a></li>
+                </ul>
+            </nav>
+            
+            <header id="header">
+                
+            </header>
+            
+            <div id="main">
+                <h1 class="title">Version 1.1.0</h1>
+                <p>Ver.1 Update 1</p>
+                <hr>
+                <ul class="API">
+                    <h3 class="title">namespace RGEngine</h3>
+                    <ul>
+                        <h3 class="title">Framework</h3>
+                        <li>class Application</li>
+                        <li>class Component</li>
+                        <li class="changed">class GameObject
+                            <p>bool GetDestroyed(void) const</p>
+                            <p>Math::Vector scaling; -> Math::Vector scale</p>
+                            <p>float rotation; -> float rotate</p>
+                        </li>
+                        <li class="changed">class Graphic
+                            <p>class ResetableComponentInterface 추가</p>
+                            <p>void ResetDevice(void)</p>
+                            <p>void PushResetableComponent(ResetableComponentInterface *component)</p>
+                            <p>void PopResetableComponent(ResetableComponentInterface *component)</p>
+                            <p>이제 ToggleFullscreen 함수와 ChangeResolution 함수가 작동함!</p>
+                        </li>
+                        <li>class Input</li>
+                        <li>class Scene</li>
+                        <li>class Time</li>
+                        <li class="new">class DataStream
+                            <p>아직 구현되지 않음</p>
+                        </li>
+                        
+                        <li class="changed">class AssetManage
+                            <p>이제 AssetManager은 싱글톤클래스가 아니고, Framework로 이동하였습니다.</p>
+                        </li>
+                        <ul>
+                            <h3 class="title">namespace Assets</h3>
+                            <li class="changed">class Sound
+                                <p>void SetLoopPoints(unsigned int loopstart, unsigned int loopend) // millisec</p>
+                                <p>unsigned int GetLoopStartPoint(void) const</p>
+                                <p>unsigned int GetLoopEndPoint(void) const</p>
+                            </li>
+                            <li>class SoundManager</li>
+                            <li>class Texture</li>
+                            <li>class TextureManager</li>
+                        </ul>
+                        <ul>
+                            <h3 class="title">namespace Math</h3>
+                            <li>struct Vector</li>
+                            <li>struct Dimension</li>
+                            <li>struct Circle</li>
+                            <li>struct Matrix</li>
+                            <li>struct Color</li>
+                            <li>struct Rect</li>
+                        </ul>
+                        <ul>
+                            <h3 class="title">namespace Types</h3>
+                            <li>struct Point</li>
+                            <li>struct Size</li>
+                            <li>struct Rect</li>
+                        </ul>
+                    </ul>
+                    <ul>
+                        <h3 class="title">Engine</h3>
+                        <ul>
+                            <h3 class="title">namespace Components</h3>
+                            <li class="new">class AudioListener
+                                <p>아직 구현되지 않음</p>
+                            </li>
+                            <li class="changed">class AudioSource
+                                <p>void PlayOneShot(); -> void Play();</p>
+                            </li>
+                            <li>class Collider</li>
+                            <li>class BoxCollider</li>
+                            <li class="new">class CircleCollider
+                                <p>아직 구현되지 않음</p>
+                            </li>
+                            <li>class Renderer</li>
+                            <li>class AnimationRenderer</li>
+                            <li>class SpriteRenderer</li>
+                            <li class="changed">class TextRenderer
+                                <p>virtual public ResetableComponentInterface 상속</p>
+                                <p>void OnLostDevice(void) override</p>
+                                <p>void OnResetDevice(void) override</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <h3 class="title">namespace DataStreams</h3>
+                            <li class="new">class File
+                                <p>아직 구현되지 않음</p>
+                            </li>
+                            <li class="new">class XML
+                                <p>아직 구현되지 않음</p>
+                            </li>
+                            <li class="new">class JSON
+                                <p>아직 구현되지 않음</p>
+                            </li>
+                        </ul>
+                    </ul>
+                </ul>
+            </div>
+        
+            <footer id="footer">
+                <p>Copyright ⓒ 2016 Republic of Game. All Rights Reserved.</p>
+            </footer>
+        </div>
+        
+    </body>
+</html>

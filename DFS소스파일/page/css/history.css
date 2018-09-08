@@ -1,0 +1,64 @@
+@meta charset="utf-8";
+
+#main
+{  
+    font-size: 30px;
+}
+#main > h1.title
+{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#main > ul.API h3.title
+{
+    font-size: 25px;
+    font-weight: bold;
+}
+#main > ul.API > ul ul > h3.title
+{
+    font-weight: normal;
+}
+#main > ul.API > ul ul
+{
+    padding-bottom: 20px;
+}
+#main > ul.API > ul li
+{
+    font-size: 20px;
+    list-style: none;
+    text-indent: 30px;
+}
+#main > ul.API > ul li:before
+{
+    content: '-  ';
+}
+#main > ul.API > ul li.changed
+{
+    color: red;
+}
+#main > ul.API > ul li.changed > p
+{
+    text-indent: 60px;
+    font-size: 18px;
+    color: black;
+}
+#main > ul.API > ul li.changed > p:before
+{
+    content: '* '
+}
+
+#main > ul.API > ul li.new
+{
+    color: blue;
+}
+#main > ul.API > ul li.new > p
+{
+    text-indent: 60px;
+    font-size: 18px;
+    color: black;
+}
+#main > ul.API > ul li.new > p:before
+{
+    content: '* '
+}

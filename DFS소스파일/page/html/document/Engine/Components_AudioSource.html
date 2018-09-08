@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>RGEngine</title>
+        
+        <link rel="stylesheet" type="text/css" href="../../../css/common.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/document.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            
+            <ul id="navbar">
+                <li><a href="../../../index.html">Main</a></li>
+                <li><a href="../../../history.html">History</a></li>
+                <li><a href="../../../news.html">News</a></li>
+                <li><a href="../../../document.html">Document</a></li>
+                <li><a href="../../../download.html">Download</a></li>
+            </ul>
+            
+            <div id="sidebar_bg"></div>
+            <nav id="sidebar">
+                <ul>
+                    <li><a href="../Framework.html">Framework</a></li>
+                    <li><a href="../Framework/Application.html">Application</a></li>
+                    <li><a href="../Framework/Component.html">Component</a></li>
+                    <li><a href="../Framework/GameObject.html">GameObject</a></li>
+                    <li><a href="../Framework/Graphic.html">Graphic</a></li>
+                    <li><a href="../Framework/Input.html">Input</a></li>
+                    <li><a href="../Framework/Scene.html">Scene</a></li>
+                    <li><a href="../Framework/Time.html">Time</a></li>
+                    <li><a href="../Framework/DataStream.html">DataStream</a></li>
+                    <li><a href="../Framework/Math.html">Math</a></li>
+                    <li><a href="../Framework/Math_Vector.html">Math::Vector</a></li>
+                    <li><a href="../Framework/Math_Dimension.html">Math::Dimension</a></li>
+                    <li><a href="../Framework/Math_Circle.html">Math::Circle</a></li>
+                    <li><a href="../Framework/Math_Matrix.html">Math::Matrix</a></li>
+                    <li><a href="../Framework/Math_Color.html">Math::Color</a></li>
+                    <li><a href="../Framework/Math_Rect.html">Math::Rect</a></li>
+                    <li><a href="../Framework/Types.html">Types</a></li>
+                    <li><a href="../Framework/Types_Point.html">Types::Point</a></li>
+                    <li><a href="../Framework/Types_Size.html">Types::Size</a></li>
+                    <li><a href="../Framework/Types_Rect.html">Types::Rect</a></li>
+                    <li><a href="../Framework/AssetManager.html">AssetManager</a></li>
+                    <li><a href="../Framework/Assets.html">Assets</a></li>
+                    <li><a href="../Framework/Assets_Sound.html">Assets::Sound</a></li>
+                    <li><a href="../Framework/Assets_SoundManager.html">Assets::SoundManager</a></li>
+                    <li><a href="../Framework/Assets_Texture.html">Assets::Texture</a></li>
+                    <li><a href="../Framework/Assets_TextureManager.html">Assets::TextureManager</a></li>
+                </ul>
+                <ul>
+                    <li><a href="../Engine.html">Engine</a></li>
+                    <li><a href="Components.html">Components</a></li>
+                    <li><a href="Components_AudioListener.html">Components::AudioListener</a></li>
+                    <li><a href="Components_AudioSource.html">Components::AudioSource</a></li>
+                    <li><a href="Components_Collider.html">Components::Collider</a></li>
+                    <li><a href="Components_BoxCollider.html">Components::BoxCollider</a></li>
+                    <li><a href="Components_CircleCollider.html">Components::CircleCollider</a></li>
+                    <li><a href="Components_Renderer.html">Components::Renderer</a></li>
+                    <li><a href="Components_AnimationRenderer.html">Components::AnimationRenderer</a></li>
+                    <li><a href="Components_SpriteRenderer.html">Components::SpriteRenderer</a></li>
+                    <li><a href="Components_TextRenderer.html">Components::TextRenderer</a></li>
+                    <li><a href="DataStreams.html">DataStreams</a></li>
+                    <li><a href="DataStreams_File.html">DataStreams::File</a></li>
+                    <li><a href="DataStreams_XML.html">DataStreams::XML</a></li>
+                    <li><a href="DataStreams_JSON.html">DataStreams::JSON</a></li>
+                </ul>
+            </nav>
+            
+            <header id="header">
+                
+            </header>
+            
+            <div id="main">
+                <ul>
+                    <h2>class RGEngine::Components::AudioSource</h2>
+                    <p>Play sound</p>
+                    <hr>
+                    
+                    <li>bool IsPlaying(void) const
+                        <p>재생중인지 얻어온다.</p>
+                    </li>
+                    <li>void Play(void);
+                        <p>재생한다.</p>
+                    </li>
+                    <li>void Pause(void)
+                        <p>일시정지한다.</p>
+                    </li>
+                    <li>void Resume(void)
+                        <p>일시정지를 해제한다.</p>
+                    </li>
+                    <li>void Stop(void)
+                        <p>재생을 중지하고 처음으로 되돌린다.</p>
+                    </li>
+                    <li>Assets::Sound* GetSound(void) const
+                        <p>설정한 사운드를 얻어온다.</p>
+                    </li>
+                    <li>void SetSound(std::string path)
+                        <p>사운드를 설정한다.</p>
+                    </li>
+                    <li>unsigned int GetPosition(void) const
+                        <p>재생중인 사운드의 재생위치를 밀리초 단위로 얻어온다.</p>
+                    </li>
+                    <li>float GetVolume(void) const
+                        <p>현재 볼륨을 얻어온다.</p>
+                    </li>
+                    <li>float GetFrequency(void) const
+                        <p>현재 주파수를 얻어온다.</p>
+                    </li>
+                    <li>float GetPan(void) const
+                        <p>현재 패닝을 얻어온다.</p>
+                    </li>
+                    <li>bool GetMute(void) const
+                        <p>현재 음소거 상태인지 얻어온다.</p>
+                    </li>
+                    <li>void SetPosition(unsigned int position)
+                        <p>사운드의 재생위치를 밀리초 단위로 설정한다.</p>
+                    </li>
+                    <li>void SetVolume(float volume)
+                        <p>볼륨을 설정한다.</p>
+                        <p>0.0f ~ 1.0f 의 값을 가진다.</p>
+                    </li>
+                    <li>void SetFrequency(float frequency)
+                        <p>주파수를 설정한다.</p>
+                        <p>Hz로, 스트림 사운드가 아닌 경우 음수가 될 수 있다.</p>
+                    </li>
+                    <li>void SetPan(float pan)
+                        <p>패닝을 설정한다.</p>
+                        <p>-1.0f ~ 1.0f의 값을 가진다. (음수일수록 왼쪽, 양수일수록 오른쪽)</p>
+                    </li>
+                    <li>void SetMute(bool b)
+                        <p>음소거를 설정한다.</p>
+                    </li>
+                    <li>void Reset(void) override
+                        <p>Component를 처음 상태로 초기화한다.</p>
+                    </li>
+                </ul>
+            </div>
+        
+            <footer id="footer">
+                <p>Copyright ⓒ 2016 Republic of Game. All Rights Reserved.</p>
+            </footer>
+        </div>
+        
+    </body>
+</html>

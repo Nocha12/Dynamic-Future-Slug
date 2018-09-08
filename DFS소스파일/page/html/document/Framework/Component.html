@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>RGEngine</title>
+        
+        <link rel="stylesheet" type="text/css" href="../../../css/common.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/document.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            
+            <ul id="navbar">
+                <li><a href="../../../index.html">Main</a></li>
+                <li><a href="../../../history.html">History</a></li>
+                <li><a href="../../../news.html">News</a></li>
+                <li><a href="../../../document.html">Document</a></li>
+                <li><a href="../../../download.html">Download</a></li>
+            </ul>
+            
+            <div id="sidebar_bg"></div>
+            <nav id="sidebar">
+                <ul>
+                    <li><a href="../Framework.html">Framework</a></li>
+                    <li><a href="Application.html">Application</a></li>
+                    <li><a href="Component.html">Component</a></li>
+                    <li><a href="GameObject.html">GameObject</a></li>
+                    <li><a href="Graphic.html">Graphic</a></li>
+                    <li><a href="Input.html">Input</a></li>
+                    <li><a href="Scene.html">Scene</a></li>
+                    <li><a href="Time.html">Time</a></li>
+                    <li><a href="DataStream.html">DataStream</a></li>
+                    <li><a href="Math.html">Math</a></li>
+                    <li><a href="Math_Vector.html">Math::Vector</a></li>
+                    <li><a href="Math_Dimension.html">Math::Dimension</a></li>
+                    <li><a href="Math_Circle.html">Math::Circle</a></li>
+                    <li><a href="Math_Matrix.html">Math::Matrix</a></li>
+                    <li><a href="Math_Color.html">Math::Color</a></li>
+                    <li><a href="Math_Rect.html">Math::Rect</a></li>
+                    <li><a href="Types.html">Types</a></li>
+                    <li><a href="Types_Point.html">Types::Point</a></li>
+                    <li><a href="Types_Size.html">Types::Size</a></li>
+                    <li><a href="Types_Rect.html">Types::Rect</a></li>
+                    <li><a href="AssetManager.html">AssetManager</a></li>
+                    <li><a href="Assets.html">Assets</a></li>
+                    <li><a href="Assets_Sound.html">Assets::Sound</a></li>
+                    <li><a href="Assets_SoundManager.html">Assets::SoundManager</a></li>
+                    <li><a href="Assets_Texture.html">Assets::Texture</a></li>
+                    <li><a href="Assets_TextureManager.html">Assets::TextureManager</a></li>
+                </ul>
+                <ul>
+                    <li><a href="../Engine.html">Engine</a></li>
+                    <li><a href="../Engine/Components.html">Components</a></li>
+                    <li><a href="../Engine/Components_AudioListener.html">Components::AudioListener</a></li>
+                    <li><a href="../Engine/Components_AudioSource.html">Components::AudioSource</a></li>
+                    <li><a href="../Engine/Components_Collider.html">Components::Collider</a></li>
+                    <li><a href="../Engine/Components_BoxCollider.html">Components::BoxCollider</a></li>
+                    <li><a href="../Engine/Components_CircleCollider.html">Components::CircleCollider</a></li>
+                    <li><a href="../Engine/Components_Renderer.html">Components::Renderer</a></li>
+                    <li><a href="../Engine/Components_AnimationRenderer.html">Components::AnimationRenderer</a></li>
+                    <li><a href="../Engine/Components_SpriteRenderer.html">Components::SpriteRenderer</a></li>
+                    <li><a href="../Engine/Components_TextRenderer.html">Components::TextRenderer</a></li>
+                    <li><a href="../Engine/DataStreams.html">DataStreams</a></li>
+                    <li><a href="../Engine/DataStreams_File.html">DataStreams::File</a></li>
+                    <li><a href="../Engine/DataStreams_XML.html">DataStreams::XML</a></li>
+                    <li><a href="../Engine/DataStreams_JSON.html">DataStreams::JSON</a></li>
+                </ul>
+            </nav>
+            
+            <header id="header">
+                
+            </header>
+            
+            <div id="main">
+                <ul>
+                    <h2>class RGEngine::Component</h2>
+                    <p>Component Interface</p>
+                    <hr>
+                    <li>void SetEnabled(bool flag)
+                        <p>사용 가능 / 불가능 상태를 설정한다. 불가능 상태일시 Update/Render 되지 않는다.</p>
+                    </li>
+                    <li>bool GetEnabled(void) const
+                        <p>현재 사용 가능 / 불가능 상태를 얻어온다.</p>
+                    </li>
+                        
+                    <li>GameObject* GetGameObject(void) const
+                        <p>어떤 GameObject에 부착되어 있는지 얻어온다.</p>
+                    </li>
+                    <li>void Reset(void)
+                        <p>처음 생성되었을 때의 상태로 초기화한다.</p>
+                    </li>
+                    <hr>
+                    <h3>When Script Custom Component</h3>
+                    <p>Override follow methods</p>
+                    <hr>
+                    
+                    <li>virtual void Reset(void) = 0
+                        <p>처음 생성되었을 때의 상태로 초기화하는 함수</p>
+                    </li>
+                    <li>virtual void OnEnabled(void)
+                        <p>사용 가능 상태로 변경시 호출되는 Callback 함수</p>
+                    </li>
+                    <li>virtual void OnDisabled(void)
+                        <p>사용 불가능 상태로 변경시 호출되는 Callback 함수</p>
+                    </li>
+                    <li>virtual void OnUpdate(void)
+                        <p>프레임 갱신시 호출되는 Callback 함수</p>
+                    </li>
+                    <li>virtual void OnRender(void)
+                        <p>렌더링시 호출되는 Callback 함수</p>
+                    </li>
+                </ul>
+            </div>
+        
+            <footer id="footer">
+                <p>Copyright ⓒ 2016 Republic of Game. All Rights Reserved.</p>
+            </footer>
+        </div>
+        
+    </body>
+</html>

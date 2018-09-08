@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>RGEngine</title>
+        
+        <link rel="stylesheet" type="text/css" href="../../../css/common.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/document.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            
+            <ul id="navbar">
+                <li><a href="../../../index.html">Main</a></li>
+                <li><a href="../../../history.html">History</a></li>
+                <li><a href="../../../news.html">News</a></li>
+                <li><a href="../../../document.html">Document</a></li>
+                <li><a href="../../../download.html">Download</a></li>
+            </ul>
+            
+            <div id="sidebar_bg"></div>
+            <nav id="sidebar">
+                <ul>
+                    <li><a href="../Framework.html">Framework</a></li>
+                    <li><a href="Application.html">Application</a></li>
+                    <li><a href="Component.html">Component</a></li>
+                    <li><a href="GameObject.html">GameObject</a></li>
+                    <li><a href="Graphic.html">Graphic</a></li>
+                    <li><a href="Input.html">Input</a></li>
+                    <li><a href="Scene.html">Scene</a></li>
+                    <li><a href="Time.html">Time</a></li>
+                    <li><a href="DataStream.html">DataStream</a></li>
+                    <li><a href="Math.html">Math</a></li>
+                    <li><a href="Math_Vector.html">Math::Vector</a></li>
+                    <li><a href="Math_Dimension.html">Math::Dimension</a></li>
+                    <li><a href="Math_Circle.html">Math::Circle</a></li>
+                    <li><a href="Math_Matrix.html">Math::Matrix</a></li>
+                    <li><a href="Math_Color.html">Math::Color</a></li>
+                    <li><a href="Math_Rect.html">Math::Rect</a></li>
+                    <li><a href="Types.html">Types</a></li>
+                    <li><a href="Types_Point.html">Types::Point</a></li>
+                    <li><a href="Types_Size.html">Types::Size</a></li>
+                    <li><a href="Types_Rect.html">Types::Rect</a></li>
+                    <li><a href="AssetManager.html">AssetManager</a></li>
+                    <li><a href="Assets.html">Assets</a></li>
+                    <li><a href="Assets_Sound.html">Assets::Sound</a></li>
+                    <li><a href="Assets_SoundManager.html">Assets::SoundManager</a></li>
+                    <li><a href="Assets_Texture.html">Assets::Texture</a></li>
+                    <li><a href="Assets_TextureManager.html">Assets::TextureManager</a></li>
+                </ul>
+                <ul>
+                    <li><a href="../Engine.html">Engine</a></li>
+                    <li><a href="../Engine/Components.html">Components</a></li>
+                    <li><a href="../Engine/Components_AudioListener.html">Components::AudioListener</a></li>
+                    <li><a href="../Engine/Components_AudioSource.html">Components::AudioSource</a></li>
+                    <li><a href="../Engine/Components_Collider.html">Components::Collider</a></li>
+                    <li><a href="../Engine/Components_BoxCollider.html">Components::BoxCollider</a></li>
+                    <li><a href="../Engine/Components_CircleCollider.html">Components::CircleCollider</a></li>
+                    <li><a href="../Engine/Components_Renderer.html">Components::Renderer</a></li>
+                    <li><a href="../Engine/Components_AnimationRenderer.html">Components::AnimationRenderer</a></li>
+                    <li><a href="../Engine/Components_SpriteRenderer.html">Components::SpriteRenderer</a></li>
+                    <li><a href="../Engine/Components_TextRenderer.html">Components::TextRenderer</a></li>
+                    <li><a href="../Engine/DataStreams.html">DataStreams</a></li>
+                    <li><a href="../Engine/DataStreams_File.html">DataStreams::File</a></li>
+                    <li><a href="../Engine/DataStreams_XML.html">DataStreams::XML</a></li>
+                    <li><a href="../Engine/DataStreams_JSON.html">DataStreams::JSON</a></li>
+                </ul>
+            </nav>
+            
+            <header id="header">
+                
+            </header>
+            
+            <div id="main">
+                <ul>
+                    <h2>class RGEngine::Graphic</h2>
+                    <p>Window &amp; DirectX Manager</p>
+                    <hr>
+                    
+                    <li>bool CreateFrame(const wchar_t *title, int width, int height, bool fullscreen)
+                        <p>윈도우를 생성한다. Application의 Initialize에서 호출된다.</p>
+                    </li>
+                    <li>bool ChangeResolution(int width, int height)
+                        <p>해상도를 변경한다.</p>
+                    </li>
+                    <li>void Release(void)
+                        <p>DirectX 객체를 해제하고 윈도우를 파괴한다.</p>
+                    </li>
+                    <li>void PushResetableComponent(ResetableComponentInterface *component)
+                        <p>ResetableComponentInterface에서 상속받은 객체를 추가한다. 디바이스가 Reset될때 함께 Reset된다.</p>
+                        <p>프레임워크 내부에서 호출된다. (따로 사용할 일이 없다.)</p>
+                    </li>
+                    <li>void PopResetableComponent(ResetableComponentInterface *component)
+                        <p>추가된 ResetableComponentInterface에서 상속받은 객체를 삭제한다.</p>
+                        <p>프레임워크 내부에서 호출된다. (따로 사용할 일이 없다.)</p>
+                    </li>
+                    <li>bool Process(void)
+                        <p>Windows 운영체제에서 받은 메시지를 Dispatch한다.</p>
+                        <p>게임의 메인루프 안에서 프레임마다 호출되어야한다.</p>
+                    </li>
+                    <li>bool BeginScene(void)
+                        <p>렌더링을 시작한다. 렌더링 하기 전 호출되어 성공하여야한다. (성공시 true를 반환한다.)</p>
+                    </li>
+                    <li>bool EndScene(void)
+                        <p>렌더링을 종료한다.</p>
+                    </li>
+                    <li>bool ToggleFullscreen(void)
+                        <p>전체화면일시 창모드로, 창모드일시 전체화면으로 전환한다.</p>
+                    </li>
+                    <li>bool Validate(void)
+                        <p>윈도우에 종료 메시지가 도착하였는지, DirectX 디바이스가 유효한지 검사한다. 매 프레임 갱신 전 체크하여야 한다.</p>
+                    </li>
+                    <li>bool IsFullscreen(void) const
+                        <p>현재 풀스크린 상태인지 검사한다.</p>
+                    </li>
+                    <li>void SetCaption(const wchar_t *title)
+                        <p>윈도우 타이틀(캡션)을 수정한다.</p>
+                    </li>
+                    <li>
+                        void SetWindowPos(const Types::Point &p)<br>
+                        void SetWindowPos(int x, int y)
+                        <p>윈도우 좌표를 지정한다.</p>
+                        <p>해상도 변경시 프레임워크 내부에서 호출된다.</p>
+                    </li>
+                    <li>
+                        void SetWindowSize(const Types::Size &s)<br>
+                        void SetWindowSize(int width, int height)
+                        <p>윈도우 크기를 지정한다.</p>
+                        <p>해상도 변경시 프레임워크 내부에서 호출된다.</p>
+                    </li>
+                    <li>void SetMaxmizable(bool flag)
+                        <p>윈도우의 최대화 가능 / 불가능을 설정한다.</p>
+                    </li>
+                    <li>HWND GetWindowHandle(void) const
+                        <p>윈도우의 핸들(Windows에서 윈도우들이 가지고있는 고유 식별값)을 얻어온다.</p>
+                    </li>
+                    <li>std::wstring GetCaption(void) const
+                        <p>윈도우의 타이틀을 유니코드 문자열로 얻어온다.</p>
+                    </li>
+                    <li>
+                        int GetWindowWidth(void) const<br>
+                        int GetWindowHeight(void) const<br>
+                        Types::Size GetWindowSize(void) const
+                        <p>윈도우의 크기를 얻어온다. (프레임 포함)</p>
+                    </li>
+                    <li>
+                        int GetScreenWidth(void) const<br>
+                        int GetScreenHeight(void) const<br>
+                        Types::Size GetScreenSize(void) const
+                        <p>클라이언트의 가로 크기를 얻어온다. (윈도우의 프레임을 제외한 실제 게임화면 크기)</p>
+                    </li>
+                    <li>
+                        int GetWindowX(void) const<br>
+                        int GetWindowY(void) const<br>
+                        Types::Point GetWindowPos(void) const<br>
+                        <p>윈도우의 좌표를 얻어온다.</p>
+                    </li>
+                    <li>bool GetMaximizable(void) const
+                        <p>윈도우의 최대화 가능 / 불가능을 얻어온다.</p>
+                    </li>
+                    <li>LPDIRECT3DDEVICE9 GetDevice(void) const
+                        <p>DirectX9 디바이스 객체를 얻어온다.</p>
+                    </li>
+                    <li>LPD3DXSPRITE GetSprite(void) const
+                        <p>DirectX9 스프라이트 객체를 얻어온다.</p>
+                    </li>
+                    <li>void MinimizeWindow(void)
+                        <p>윈도우를 최소화 상태로 만든다.</p>
+                    </li>
+                    <li>void MaxmizeWindow(void)
+                        <p>윈도우가 최대화 상태로 만든다.</p>
+                    </li>
+                    <li>void FocusWindow(void)
+                        <p>윈도우에 포커스를 설정한다.</p>
+                    </li>
+                    <li>void ForegroundWindow(void)
+                        <p>윈도우를 맨 위로 올라오게 한다.</p>
+                    </li>
+                    <li>void ActiveWindow(void)
+                        <p>윈도우를 활성화중인 윈도우로 설정한다.</p>
+                    </li>
+                    <li>bool IsMinimizeWindow(void) const
+                        <p>윈도우가 최소화 상태인지 얻어온다</p>
+                    </li>
+                    <li>bool IsMaximizeWindow(void) const
+                        <p>윈도우가 최대화 상태인지 얻어온다.</p>
+                    </li>
+                    <li>bool IsFocusWindow(void) const
+                        <p>윈도우에 포커스가 설정되어있는지 얻어온다.</p>
+                    </li>
+                    <li>bool IsActiveWindow(void) const
+                        <p>윈도우가 활성화된 윈도우인지 얻어온다.</p>
+                    </li>
+                </ul>
+
+            </div>
+        
+            <footer id="footer">
+                <p>Copyright ⓒ 2016 Republic of Game. All Rights Reserved.</p>
+            </footer>
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,638 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="RGEngine">
+      <UniqueIdentifier>{c4ea92b9-6745-4fd2-946f-30a246d11f0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RGEngine\Framework">
+      <UniqueIdentifier>{0de9da5f-b6b4-4e99-8085-2735418fa477}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RGEngine\Framework\Application">
+      <UniqueIdentifier>{429c3671-0ba5-483d-bbd7-461c45124c07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RGEngine\Framework\Graphic">
+      <UniqueIdentifier>{760fb4cd-8cef-433a-ab36-f732efcbe680}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RGEngine\Framework\Types">
+      <UniqueIdentifier>{6fb01e2f-b2e5-4e1e-bbdf-a3390b6b12ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RGEngine\Framework\Math">
+      <UniqueIdentifier>{4ff9afc0-9807-4509-8e6c-aa58f511ba32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RGEngine\Framework\Time">
+      <UniqueIdentifier>{70c85e88-8e31-4ff1-85da-5adf28b6cda2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RGEngine\Framework\Input">
+      <UniqueIdentifier>{c82f9e8e-8b18-4b71-b048-6dacd0a44125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RGEngine\Framework\Scene">
+      <UniqueIdentifier>{4d991aa2-986e-4c5d-9ead-69d7310b3c6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RGEngine\Framework\GameObject">
+      <UniqueIdentifier>{84a8d3e7-e804-42b3-bb0c-4a4b914f7d7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RGEngine\Framework\Component">
+      <UniqueIdentifier>{d69be86a-db44-4d0d-9c6e-0208bbea2ecb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RGEngine\Engine">
+      <UniqueIdentifier>{6c527cd8-774c-477a-815f-5589c0add6e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RGEngine\Engine\Components">
+      <UniqueIdentifier>{dc56f196-ceea-4904-8cb0-bd8714e5792b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RGEngine\Engine\Components\Collider">
+      <UniqueIdentifier>{2c992216-123c-4e6b-bf6e-636cd793362c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RGEngine\Engine\Components\Collider\Box">
+      <UniqueIdentifier>{85ae539c-ea55-46db-b471-7ce814d8d7c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RGEngine\Engine\Components\Audio">
+      <UniqueIdentifier>{8c821802-175c-45f2-a952-efb73a1c739b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RGEngine\Engine\Components\Audio\Source">
+      <UniqueIdentifier>{d87ca464-25b5-40c9-af8e-e5ff7f99d8ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RGEngine\Engine\Components\Renderer">
+      <UniqueIdentifier>{394cd9db-b82f-44ca-b289-c1e50247beac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RGEngine\Engine\Components\Renderer\Sprite">
+      <UniqueIdentifier>{c2869d89-d667-446d-8194-180f7cd45b15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RGEngine\Engine\Components\Renderer\Animation">
+      <UniqueIdentifier>{b127f488-b240-4b5d-b9df-5f50b0d3ad36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RGEngine\Engine\Components\Renderer\Text">
+      <UniqueIdentifier>{546360ca-c1a0-4a62-ab22-73840a40a1db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RGEngine\Engine\DataStreams">
+      <UniqueIdentifier>{e40b23a8-fa7d-497a-94c9-a52c9b49ec54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RGEngine\Engine\DataStreams\XML">
+      <UniqueIdentifier>{d305cc72-a698-46bf-88ad-14134a356cbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RGEngine\Engine\DataStreams\JSON">
+      <UniqueIdentifier>{95bb81f3-1d27-4959-989e-8f48dcc23ea3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RGEngine\Engine\DataStreams\File">
+      <UniqueIdentifier>{0fbc793c-79e4-4d72-89ad-df4e4d80e730}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{4a616f8f-acdd-40c5-a4e0-65fba5cf7589}</UniqueIdentifier>
+      <Extensions>cpp;h</Extensions>
+    </Filter>
+    <Filter Include="Game\Scenes">
+      <UniqueIdentifier>{ea60fc0f-c274-4e36-9f9d-60a6c311c5e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects">
+      <UniqueIdentifier>{9c07fcaa-30df-4ef8-971d-74f55b9cc6a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RGEngine\Engine\Components\Collider\Circle">
+      <UniqueIdentifier>{1d90e3b9-dd1b-4d43-afb9-8b84af103744}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RGEngine\Engine\Components\Audio\Listener">
+      <UniqueIdentifier>{88e350f6-1f64-480d-8a8a-336d9df4a32b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RGEngine\Framework\DataStream">
+      <UniqueIdentifier>{b8cc4987-6896-4d20-a82c-569a1f71120d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RGEngine\Framework\Asset">
+      <UniqueIdentifier>{ef82901c-50a8-40af-b776-22ac8609f92b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RGEngine\Framework\Asset\Texture">
+      <UniqueIdentifier>{03b7e59f-8cef-4301-9868-159bbee9bcc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RGEngine\Framework\Asset\Sound">
+      <UniqueIdentifier>{a3c9d424-d9ea-486e-8394-a2fee78d0d8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Manager">
+      <UniqueIdentifier>{8465634e-493a-4644-b6ff-22e17f800935}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Manager\GameManager">
+      <UniqueIdentifier>{e8e7104b-693a-4627-87ef-e449ac2881a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Resource">
+      <UniqueIdentifier>{579b7025-3839-4437-be83-901570d5c913}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Resource\Sprite">
+      <UniqueIdentifier>{9cae7b53-f80e-48cc-9e67-3355d50422c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Resource\Text">
+      <UniqueIdentifier>{f151be19-9ca9-4c84-bffa-da88f27c5b04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Resource\Sound">
+      <UniqueIdentifier>{04102e27-ac46-4db1-a06f-9f42344c91f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Bullet">
+      <UniqueIdentifier>{31a93340-a4f5-477e-9c54-c8f30196941f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Bullet\Normal">
+      <UniqueIdentifier>{f34207cb-6ea7-45b1-8292-a661fbd40cc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Manager\BulletManager">
+      <UniqueIdentifier>{317c92df-5af6-42c4-8b49-8f866d225664}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Enemy">
+      <UniqueIdentifier>{0d63ce4e-bce3-43d1-91a0-fa61994e4329}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Boom">
+      <UniqueIdentifier>{125c4943-ddd6-4e0f-94ce-781b634b680f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Boom\Mine">
+      <UniqueIdentifier>{a99d158a-fc3e-4707-af64-0fd773c45c36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Effect">
+      <UniqueIdentifier>{6b431b8a-36f1-4954-886b-92e7cbe8c076}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Effect\MineExplode">
+      <UniqueIdentifier>{7d536ed4-5a0b-4da6-b733-6d1102a72f04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Player">
+      <UniqueIdentifier>{4ff04bb1-3df7-4409-8766-4acd3dd47b18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Grenade">
+      <UniqueIdentifier>{8a779f7f-99d7-4133-9f10-7a8d3a4ae698}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Manager\SpawnManager">
+      <UniqueIdentifier>{c47f5ee8-6447-4ecd-8c9b-33071a28f8b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Enemy\Normal">
+      <UniqueIdentifier>{fa925a0d-29b8-4ac7-8c12-ed1cf176019a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Enemy\Turret">
+      <UniqueIdentifier>{c6f8e1aa-b09a-4e2f-83ba-25beeae3b630}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Board">
+      <UniqueIdentifier>{93381bad-d65b-4640-8c20-af2067ff9055}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Bullet\Laser">
+      <UniqueIdentifier>{30daa256-711d-4072-9809-8d8fd409e8e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Bullet\Chain">
+      <UniqueIdentifier>{8b425166-9b53-4c14-b8ef-cca23e8f2263}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Enemy\Boss">
+      <UniqueIdentifier>{95825961-3492-43d2-9c65-d3e979c295fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Enemy\Boss\Boss2">
+      <UniqueIdentifier>{7465ccab-112c-43e3-951b-f997adb8907c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Enemy\Boss\Boss1">
+      <UniqueIdentifier>{8bf2f3cc-2aa8-4420-b87b-024a04445e65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Enemy\Boss\Boss3">
+      <UniqueIdentifier>{beb5003c-7c7d-463f-bd89-3d97c5f835d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Enemy\MidBoss">
+      <UniqueIdentifier>{ce23ae74-9c90-47de-ae32-a4e67e9e6a54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Enemy\MidBoss\MidBoss1">
+      <UniqueIdentifier>{b98141f1-5e31-4583-b8f7-4f2e9ede78b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Enemy\MidBoss\MidBoss2">
+      <UniqueIdentifier>{31e7c232-6488-44f0-bde0-70253cbad3c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Enemy\MidBoss\MidBoss3">
+      <UniqueIdentifier>{3706b76b-c7af-4785-930c-4757d75074a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Ground">
+      <UniqueIdentifier>{b516ebeb-5f93-4206-a2d3-901ff9039acb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Player\Arm">
+      <UniqueIdentifier>{7d831e44-fa86-4d6b-bd79-cb8744a5113a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Enemy\Boss\Drone">
+      <UniqueIdentifier>{fab84718-51eb-4864-b3f2-f3f070731e0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scenes\MainScene">
+      <UniqueIdentifier>{ff6ee93c-427e-4ae3-8942-024260cea839}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scenes\PlayerSelect">
+      <UniqueIdentifier>{88990e47-72d7-441e-96ba-f1bae0181e04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scenes\Story">
+      <UniqueIdentifier>{ffe7431d-4c2d-4bc1-aa72-bf52a1753d68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scenes\PlayStages">
+      <UniqueIdentifier>{9ba360f4-f389-40b4-a7f3-bba468ddc2b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scenes\PlayStages\BossStage">
+      <UniqueIdentifier>{ae619984-8d8c-4ce9-8b03-a7a843a5f85e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scenes\PlayStages\MidBossStage">
+      <UniqueIdentifier>{ecf4f8d6-a95d-478c-b1e6-a6fdc21dd10e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scenes\PlayStages\ZakoStage">
+      <UniqueIdentifier>{d06aa731-fc6d-4f93-be03-c344c68752e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Enemy\NormalDrone">
+      <UniqueIdentifier>{29671890-307d-41e9-b0a8-40ab6c665ba3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scenes\Ending">
+      <UniqueIdentifier>{3dad6eca-6e15-42cd-b68c-3701e8d006d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameObjects\Emiiter">
+      <UniqueIdentifier>{4d4f47d6-5c5a-4598-bbc8-edd8d21cb85a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="RGApplication.cpp">
+      <Filter>RGEngine\Framework\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="RGGraphic.cpp">
+      <Filter>RGEngine\Framework\Graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="RGTime.cpp">
+      <Filter>RGEngine\Framework\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="RGInput.cpp">
+      <Filter>RGEngine\Framework\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="RGScene.cpp">
+      <Filter>RGEngine\Framework\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="RGComponent.cpp">
+      <Filter>RGEngine\Framework\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="RGGameObject.cpp">
+      <Filter>RGEngine\Framework\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="RGAssetTexture.cpp">
+      <Filter>RGEngine\Framework\Asset\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="RGAssetSound.cpp">
+      <Filter>RGEngine\Framework\Asset\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="RGAssetManager.cpp">
+      <Filter>RGEngine\Framework\Asset</Filter>
+    </ClCompile>
+    <ClCompile Include="RGDataStreamJSON.cpp">
+      <Filter>RGEngine\Engine\DataStreams\JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="RGDataStreamFile.cpp">
+      <Filter>RGEngine\Engine\DataStreams\File</Filter>
+    </ClCompile>
+    <ClCompile Include="RGDataStreamXML.cpp">
+      <Filter>RGEngine\Engine\DataStreams\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="RGComponentSpriteRenderer.cpp">
+      <Filter>RGEngine\Engine\Components\Renderer\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="RGComponentTextRenderer.cpp">
+      <Filter>RGEngine\Engine\Components\Renderer\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="RGComponentAnimationRenderer.cpp">
+      <Filter>RGEngine\Engine\Components\Renderer\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="RGComponentAudioSource.cpp">
+      <Filter>RGEngine\Engine\Components\Audio\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="RGComponentBoxCollider.cpp">
+      <Filter>RGEngine\Engine\Components\Collider\Box</Filter>
+    </ClCompile>
+    <ClCompile Include="RGComponentCollider.cpp">
+      <Filter>RGEngine\Engine\Components\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="RGAssetTextureManager.cpp">
+      <Filter>RGEngine\Framework\Asset\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="ProgramEntry.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="RGAssetSoundManager.cpp">
+      <Filter>RGEngine\Framework\Asset\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="RGComponentCircleCollider.cpp">
+      <Filter>RGEngine\Engine\Components\Collider\Circle</Filter>
+    </ClCompile>
+    <ClCompile Include="RGComponentAudioListener.cpp">
+      <Filter>RGEngine\Engine\Components\Audio\Listener</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>Game\Manager\GameManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>Game\Resource\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="Sound.cpp">
+      <Filter>Game\Resource\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Text.cpp">
+      <Filter>Game\Resource\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>Game\GameObjects\Bullet\Normal</Filter>
+    </ClCompile>
+    <ClCompile Include="BulletManager.cpp">
+      <Filter>Game\Manager\BulletManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Boss1.cpp">
+      <Filter>Game\GameObjects\Enemy\Boss\Boss1</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Game\GameObjects\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Mine.cpp">
+      <Filter>Game\GameObjects\Boom\Mine</Filter>
+    </ClCompile>
+    <ClCompile Include="MineExplode.cpp">
+      <Filter>Game\GameObjects\Effect\MineExplode</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Game\GameObjects\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Grenade.cpp">
+      <Filter>Game\GameObjects\Grenade</Filter>
+    </ClCompile>
+    <ClCompile Include="Normal.cpp">
+      <Filter>Game\GameObjects\Enemy\Normal</Filter>
+    </ClCompile>
+    <ClCompile Include="SpawnManager.cpp">
+      <Filter>Game\Manager\SpawnManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Turret.cpp">
+      <Filter>Game\GameObjects\Enemy\Turret</Filter>
+    </ClCompile>
+    <ClCompile Include="Drone.cpp">
+      <Filter>Game\GameObjects\Enemy\Boss\Drone</Filter>
+    </ClCompile>
+    <ClCompile Include="Board.cpp">
+      <Filter>Game\GameObjects\Board</Filter>
+    </ClCompile>
+    <ClCompile Include="Laser.cpp">
+      <Filter>Game\GameObjects\Bullet\Laser</Filter>
+    </ClCompile>
+    <ClCompile Include="Boss2.cpp">
+      <Filter>Game\GameObjects\Enemy\Boss\Boss2</Filter>
+    </ClCompile>
+    <ClCompile Include="Chain.cpp">
+      <Filter>Game\GameObjects\Bullet\Chain</Filter>
+    </ClCompile>
+    <ClCompile Include="Boss3.cpp">
+      <Filter>Game\GameObjects\Enemy\Boss\Boss3</Filter>
+    </ClCompile>
+    <ClCompile Include="MidBoss1.cpp">
+      <Filter>Game\GameObjects\Enemy\MidBoss\MidBoss1</Filter>
+    </ClCompile>
+    <ClCompile Include="MidBoss2.cpp">
+      <Filter>Game\GameObjects\Enemy\MidBoss\MidBoss2</Filter>
+    </ClCompile>
+    <ClCompile Include="MidBoss3.cpp">
+      <Filter>Game\GameObjects\Enemy\MidBoss\MidBoss3</Filter>
+    </ClCompile>
+    <ClCompile Include="Ground.cpp">
+      <Filter>Game\GameObjects\Ground</Filter>
+    </ClCompile>
+    <ClCompile Include="Arm.cpp">
+      <Filter>Game\GameObjects\Player\Arm</Filter>
+    </ClCompile>
+    <ClCompile Include="Mover.cpp">
+      <Filter>Game\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="NormalDrone.cpp">
+      <Filter>Game\GameObjects\Enemy\NormalDrone</Filter>
+    </ClCompile>
+    <ClCompile Include="MainScene.cpp">
+      <Filter>Game\Scenes\MainScene</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerSelect.cpp">
+      <Filter>Game\Scenes\PlayerSelect</Filter>
+    </ClCompile>
+    <ClCompile Include="Story.cpp">
+      <Filter>Game\Scenes\Story</Filter>
+    </ClCompile>
+    <ClCompile Include="BossStage.cpp">
+      <Filter>Game\Scenes\PlayStages\BossStage</Filter>
+    </ClCompile>
+    <ClCompile Include="MidBossStage.cpp">
+      <Filter>Game\Scenes\PlayStages\MidBossStage</Filter>
+    </ClCompile>
+    <ClCompile Include="ZakoStage.cpp">
+      <Filter>Game\Scenes\PlayStages\ZakoStage</Filter>
+    </ClCompile>
+    <ClCompile Include="Ending.cpp">
+      <Filter>Game\Scenes\Ending</Filter>
+    </ClCompile>
+    <ClCompile Include="Emitter.cpp">
+      <Filter>Game\GameObjects\Emiiter</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RGApplication.h">
+      <Filter>RGEngine\Framework\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="RGGraphic.h">
+      <Filter>RGEngine\Framework\Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="RGTypes.h">
+      <Filter>RGEngine\Framework\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="RGMath.h">
+      <Filter>RGEngine\Framework\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="RGTime.h">
+      <Filter>RGEngine\Framework\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="RGInput.h">
+      <Filter>RGEngine\Framework\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="RGScene.h">
+      <Filter>RGEngine\Framework\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="RGComponent.h">
+      <Filter>RGEngine\Framework\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="RGGameObject.h">
+      <Filter>RGEngine\Framework\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="RGAssetTexture.h">
+      <Filter>RGEngine\Framework\Asset\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="RGAssetSound.h">
+      <Filter>RGEngine\Framework\Asset\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="RGAssetManager.h">
+      <Filter>RGEngine\Framework\Asset</Filter>
+    </ClInclude>
+    <ClInclude Include="RGDataStreamJSON.h">
+      <Filter>RGEngine\Engine\DataStreams\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="RGDataStreamFile.h">
+      <Filter>RGEngine\Engine\DataStreams\File</Filter>
+    </ClInclude>
+    <ClInclude Include="RGDataStreamXML.h">
+      <Filter>RGEngine\Engine\DataStreams\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="RGComponentSpriteRenderer.h">
+      <Filter>RGEngine\Engine\Components\Renderer\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="RGComponentTextRenderer.h">
+      <Filter>RGEngine\Engine\Components\Renderer\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="RGComponentAnimationRenderer.h">
+      <Filter>RGEngine\Engine\Components\Renderer\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="RGComponentRenderer.h">
+      <Filter>RGEngine\Engine\Components\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="RGComponentAudioSource.h">
+      <Filter>RGEngine\Engine\Components\Audio\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="RGComponentBoxCollider.h">
+      <Filter>RGEngine\Engine\Components\Collider\Box</Filter>
+    </ClInclude>
+    <ClInclude Include="RGComponentCollider.h">
+      <Filter>RGEngine\Engine\Components\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="RGAssetTextureManager.h">
+      <Filter>RGEngine\Framework\Asset\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="RGEngine.h">
+      <Filter>RGEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="RGAssetSoundManager.h">
+      <Filter>RGEngine\Framework\Asset\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="RGComponentCircleCollider.h">
+      <Filter>RGEngine\Engine\Components\Collider\Circle</Filter>
+    </ClInclude>
+    <ClInclude Include="RGComponentAudioListener.h">
+      <Filter>RGEngine\Engine\Components\Audio\Listener</Filter>
+    </ClInclude>
+    <ClInclude Include="RGDataStream.h">
+      <Filter>RGEngine\Framework\DataStream</Filter>
+    </ClInclude>
+    <ClInclude Include="RGMath.hpp">
+      <Filter>RGEngine\Framework\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>Game\Manager\GameManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>Game\Resource\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound.h">
+      <Filter>Game\Resource\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Text.h">
+      <Filter>Game\Resource\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.h">
+      <Filter>Game\GameObjects\Bullet\Normal</Filter>
+    </ClInclude>
+    <ClInclude Include="BulletManager.h">
+      <Filter>Game\Manager\BulletManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Boss1.h">
+      <Filter>Game\GameObjects\Enemy\Boss\Boss1</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Game\GameObjects\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Mover.h">
+      <Filter>Game\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Mine.h">
+      <Filter>Game\GameObjects\Boom\Mine</Filter>
+    </ClInclude>
+    <ClInclude Include="MineExplode.h">
+      <Filter>Game\GameObjects\Effect\MineExplode</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Game\GameObjects\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Grenade.h">
+      <Filter>Game\GameObjects\Grenade</Filter>
+    </ClInclude>
+    <ClInclude Include="Normal.h">
+      <Filter>Game\GameObjects\Enemy\Normal</Filter>
+    </ClInclude>
+    <ClInclude Include="SpawnManager.h">
+      <Filter>Game\Manager\SpawnManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Turret.h">
+      <Filter>Game\GameObjects\Enemy\Turret</Filter>
+    </ClInclude>
+    <ClInclude Include="Drone.h">
+      <Filter>Game\GameObjects\Enemy\Boss\Drone</Filter>
+    </ClInclude>
+    <ClInclude Include="Board.h">
+      <Filter>Game\GameObjects\Board</Filter>
+    </ClInclude>
+    <ClInclude Include="Laser.h">
+      <Filter>Game\GameObjects\Bullet\Laser</Filter>
+    </ClInclude>
+    <ClInclude Include="Boss2.h">
+      <Filter>Game\GameObjects\Enemy\Boss\Boss2</Filter>
+    </ClInclude>
+    <ClInclude Include="Chain.h">
+      <Filter>Game\GameObjects\Bullet\Chain</Filter>
+    </ClInclude>
+    <ClInclude Include="Boss3.h">
+      <Filter>Game\GameObjects\Enemy\Boss\Boss3</Filter>
+    </ClInclude>
+    <ClInclude Include="MidBoss1.h">
+      <Filter>Game\GameObjects\Enemy\MidBoss\MidBoss1</Filter>
+    </ClInclude>
+    <ClInclude Include="MidBoss2.h">
+      <Filter>Game\GameObjects\Enemy\MidBoss\MidBoss2</Filter>
+    </ClInclude>
+    <ClInclude Include="MidBoss3.h">
+      <Filter>Game\GameObjects\Enemy\MidBoss\MidBoss3</Filter>
+    </ClInclude>
+    <ClInclude Include="Ground.h">
+      <Filter>Game\GameObjects\Ground</Filter>
+    </ClInclude>
+    <ClInclude Include="Arm.h">
+      <Filter>Game\GameObjects\Player\Arm</Filter>
+    </ClInclude>
+    <ClInclude Include="NormalDrone.h">
+      <Filter>Game\GameObjects\Enemy\NormalDrone</Filter>
+    </ClInclude>
+    <ClInclude Include="MainScene.h">
+      <Filter>Game\Scenes\MainScene</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerSelect.h">
+      <Filter>Game\Scenes\PlayerSelect</Filter>
+    </ClInclude>
+    <ClInclude Include="Story.h">
+      <Filter>Game\Scenes\Story</Filter>
+    </ClInclude>
+    <ClInclude Include="BossStage.h">
+      <Filter>Game\Scenes\PlayStages\BossStage</Filter>
+    </ClInclude>
+    <ClInclude Include="MidBossStage.h">
+      <Filter>Game\Scenes\PlayStages\MidBossStage</Filter>
+    </ClInclude>
+    <ClInclude Include="ZakoStage.h">
+      <Filter>Game\Scenes\PlayStages\ZakoStage</Filter>
+    </ClInclude>
+    <ClInclude Include="Ending.h">
+      <Filter>Game\Scenes\Ending</Filter>
+    </ClInclude>
+    <ClInclude Include="Emitter.h">
+      <Filter>Game\GameObjects\Emiiter</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RGMath.inl">
+      <Filter>RGEngine\Framework\Math</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\할일(찬우형).txt">
+      <Filter>Game</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Dynamic Future Slug.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico" />
+    <Image Include="resources\Background\temp.png" />
+    <Image Include="..\..\제목 123없음.png" />
+    <Image Include="icon2.ico" />
+  </ItemGroup>
+</Project>

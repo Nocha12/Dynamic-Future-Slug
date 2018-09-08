@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>RGEngine</title>
+        
+        <link rel="stylesheet" type="text/css" href="../../css/common.css">
+        <link rel="stylesheet" type="text/css" href="../../css/history.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            
+            <ul id="navbar">
+                <li><a href="../../index.html">Main</a></li>
+                <li><a href="../../history.html">History</a></li>
+                <li><a href="../../news.html">News</a></li>
+                <li><a href="../../document.html">Document</a></li>
+                <li><a href="../../download.html">Download</a></li>
+            </ul>
+            
+            <div id="sidebar_bg"></div>
+            <nav id="sidebar">
+                <ul>
+                    <li><a href="1.0.0.html">1.0.0</a></li>
+                    <li><a href="1.0.1.html">1.0.1</a></li>
+                    <li><a href="1.1.0.html">1.1.0</a></li>
+                </ul>
+            </nav>
+            
+            <header id="header">
+                
+            </header>
+            
+            <div id="main">
+                <h1 class="title">Version 1.0.1</h1>
+                <p>Ver.1.0 bugfix 1</p>
+                <hr>
+                <ul class="API">
+                    <h3 class="title">namespace RGEngine</h3>
+                    <ul>
+                        <h3 class="title">Framework</h3>
+                        <li>class Application</li>
+                        <li>class Component</li>
+                        <li class="changed">class GameObject
+                            <p>게임 오브젝트 Destroy</p>
+                        </li>
+                        <li>class Graphic</li>
+                        <li>class Input</li>
+                        <li class="changed">class Scene
+                            <p>게임 오브젝트 Push, Pop 방식 변경(프레임 마지막)</p>
+                        </li>
+                        <li>class Time</li>
+                        <ul>
+                            <h3 class="title">namespace Math</h3>
+                            <li>struct Vector</li>
+                            <li>struct Dimension</li>
+                            <li>struct Circle</li>
+                            <li>struct Matrix</li>
+                            <li>struct Color</li>
+                            <li>struct Rect</li>
+                        </ul>
+                        <ul>
+                            <h3 class="title">namespace Types</h3>
+                            <li>struct Point</li>
+                            <li>struct Size</li>
+                            <li>struct Rect</li>
+                        </ul>
+                    </ul>
+                    <ul>
+                        <h3 class="title">Engine</h3>
+                        <li>class AssetManager</li>
+                        <ul>
+                            <h3 class="title">namespace Assets</h3>
+                            <li class="changed">class Sound
+                                <p>사운드 루프 기능</p>
+                            </li>
+                            <li class="changed">class SoundManager
+                                <p>사운드 루프 기능</p>
+                            </li>
+                            <li>class Texture</li>
+                            <li>class TextureManager</li>
+                        </ul>
+                        <ul>
+                            <h3 class="title">namespace Components</h3>
+                            <li>class AudioSource</li>
+                            <li>class Collider</li>
+                            <li>class BoxCollider</li>
+                            <li>class Renderer</li>
+                            <li>class AnimationRenderer</li>
+                            <li>class SpriteRenderer</li>
+                            <li>class TextRenderer</li>
+                        </ul>
+                    </ul>
+                </ul>
+            </div>
+        
+            <footer id="footer">
+                <p>Copyright ⓒ 2016 Republic of Game. All Rights Reserved.</p>
+            </footer>
+        </div>
+        
+    </body>
+</html>
